@@ -1,4 +1,4 @@
 #!/bin/bash
-docker rm -f aflplusplus-excercise
-docker build -t aflplusplus-excercise .
-docker run --rm --name=aflplusplus-excercise -it aflplusplus-excercise
+docker rm -f aflplusplus-exercise
+docker build -t aflplusplus-exercise .
+docker run --rm --name=aflplusplus-exercise -it aflplusplus-exercise
