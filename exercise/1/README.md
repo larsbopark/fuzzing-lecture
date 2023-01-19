@@ -4,7 +4,7 @@ In this exercise we will run a simple blackbox fuzz test using AFL++. We do so t
 ## Prerequisites
 We make sure that the docker container is running. If it is not running we do so by running the script `build-docker.sh`. For a more detailed description of how to launch the script read the `README.md` in the root of the exercise directory.
 
-## Compiling and Running the Program
+## Compiling and Running the Application
 In this exercise the source code is provided, but in order to a correct blackbox fuzz test we should **avoid** to view the contents for now. 
 > Navigating in a terminal can be difficult without former experience here is some helpful commands:
 > - `pwd` - print working directory
@@ -23,7 +23,7 @@ Then there will be a C source file, a directory containing a test case and this 
 clang -o exercise1 main.c
 ```
 
-The compiled program is located in `exercise1` and can executed by running the following command:
+The compiled application is called `exercise1` and can executed by running the following command:
 ```bash
 ./exercise1
 ```
@@ -85,6 +85,19 @@ Remember the application is written in C. One of the most common mistake in C pr
 
 ### Now open the source code! Where is the problem happening and how do we fix it?
 
+> The source code can be edited in the container used the command line editor Vim. In order to modify the code simply run the following command:
+> ```bash
+> vim main.c
+> ```
+> For first time Vim users it can be a bit hard to use. Here are some helpful commands:
+> - `i` - enter insert mode
+> - `esc` - exit insert mode
+> - `:q` - quit
+> - `:w` - write
+> - `:wq` - write and quit
+> 
+> Vim is a powerful tool and for more details use your favorite search engine
+
 <details>
   <summary>Hint</summary>
 When we compiled the application, we were met with a warning:
@@ -92,4 +105,4 @@ When we compiled the application, we were met with a warning:
 </details>
 
 ## Moving On
-If we fixed the application we can try recompile the source code with the fixes and fuzz test the newly compiled application. Hopefully we do not see any crashes, the application is safe and we can move on to the next exciting exercise.
+If we fixed the application corretly we can try recompile the source code with the fixes and fuzz test the newly compiled application. Hopefully we do not see any crashes, the application is safe and we can move on to the next exciting exercise.
