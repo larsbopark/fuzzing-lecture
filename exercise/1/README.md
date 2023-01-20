@@ -27,7 +27,7 @@ The compiled application is called `exercise1` and can executed by running the f
 ```bash
 ./exercise1
 ```
-The program is very simple and an observant student will deduce, that the program takes a string and the prints it to the terminal.
+The application is very simple and an observant student will deduce, that the application takes a string and the prints it to the terminal.
 
 ## Blackbox Fuzzing with AFL++
 AFL++ supports a wide range of features, one of these features is a simple blackbox fuzz test. First, we want to run AFL++ and we can do so by simple typing following command in container terminal:
@@ -43,7 +43,7 @@ We can try running AFL++ with the required parameters as well as the path to the
 afl-fuzz -i input_directory/ -o output_directory -- /exercise/1/exercise1
 ```
 **When running the command we are met by an error!** This is due to the fact that AFL++ normally uses the instrumentation, which applicable in a blackbox fuzz testing context. Inorder to instrument a binary we have need the source code, which is not available in blackbox fuzz testing.
-> Reminder of the *boxes*:
+> Recalling the *boxes*:
 > - Blackbox -- only input and output are available 
 > - Whitebox -- source code, specification and documentation are available
 > - Greybox -- something in between (widely discussed in the fuzz testing community)
