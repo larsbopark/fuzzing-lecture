@@ -4,9 +4,9 @@
 
 int main(){
     int output = 0;
-    char input_buffer[64];
+    char input_buffer[20];
 
-    gets(input_buffer); // read stdin to `input_buffer`
+    gets(input_buffer); // read from stdin to `input_buffer`
 
     if(strcmp(input_buffer, "FUZZing is bad")==0) abort(); // `abort()` crashes a program
 
