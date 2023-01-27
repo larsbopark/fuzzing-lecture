@@ -14,7 +14,7 @@ afl-cc -o target main.c
 ```
 The compiled application is called `target` and can executed by running the following command:
 ```bash
-./vendingmachine
+./target
 ```
 When running the application we can deduce it resembles a fuzztastic vending machine.
 

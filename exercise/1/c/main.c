@@ -16,7 +16,7 @@ int main(){
     strncpy(output_buffer, input_buffer,nbOfChars); // Write the number of chars to output_buffer
 
     printf("Original: %s\n", input_buffer); // print original
-    printf("Result: %s",output_buffer); // print result
+    printf("Result: %s\n",output_buffer); // print result
 
 
     if(strcmp(input_buffer, "FUZZing is bad")==0) abort(); // `abort()` crashes a program
