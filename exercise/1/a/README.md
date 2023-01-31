@@ -25,7 +25,6 @@ Remember the application is written in C. One of the most common mistake in C pr
 </details>
 
 ----------------------------------------------------------------
-
 ### Now open the source code! Where is the problem happening and how do we fix it?
 Even if we pretended the fuzz test was blackbox, we have the opportunity to read the source code. We will ofcourse exploit that to check that our assumptions are correct. Furthermore, we are able to fix the application and make it safe for unexpected crashes. Are you able identify the mistake and fix it?
 
@@ -47,6 +46,8 @@ Even if we pretended the fuzz test was blackbox, we have the opportunity to read
 When we compiled the application, we were met with a warning:
 <b>the `gets' function is dangerous and should not be used.</b>. When reading the source code it is then easy to recognize where the `gets` function is called. A fix is replacing the dangerous `gets` with the bounded `fgets` function. 
 </details>
+
+----------------------------------------------------------------
 
 ## Moving On
 If we fixed the application correctly, we can recompile the source code with the fixes and fuzz test the newly compiled application. Hopefully we do not see any crashes, the application is safe and we can move on to the next exciting exercise.

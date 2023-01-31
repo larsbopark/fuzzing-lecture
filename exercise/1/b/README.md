@@ -14,10 +14,15 @@ Now we can test if the testcase works by running the following command:
 ```bash
 cat input_directory/testcase0 | ./target
 ```
+> Recalling the two major ways of generating testcases in fuzz testing:
+> - Mutation-based -- Mutates and initial testcase by applying random mutation-operations
+> - Generation-based -- Generating testcase from a set of rules
+>
+> Both very effective, mutation-based being easier to use and generation-based being more precise.
 
 ----------------------------------------------------------------
 
-### The common property is what?
+### Understanding the Results
 If doing the exercises chronologically, we know that the idea of looking at the testcases is important. Try to find the common property for the testcases.
 
 <details>

@@ -7,17 +7,17 @@ If we followed the exercises chronological, we already know how to compile and r
 
 --------------------------------
 ### Understanding the Application
-Run the application a couple of times, I am sure a curious student will figure out the behaviour of the application, without looking at source. Can you explain what the application does?
+Run the application a couple of times, I am sure a curious student will figure out the behaviour of the application, without looking at source. **Can you explain what the application does?**
 
 --------------------------------
 
 ### Understanding the Results 
 When looking at the results we will see a number of testcases resulting in a crash. When investigating the testcases it might not be obvious why the application crash, with the given input. Try to play with the idea of two inputs and if the crash happens because of the first, second or both, while looking at the testcases provoking crashes. 
 
-- Can you find the common property of the testcases or just reason why the application crashes given the inputs?
-- If you find the right reason, it should be easy to generate your own testcases which crash the application. Write down 3 testcases which crashes the application.
+- **Can you find the common property of the testcases or just reason why the application crashes given the inputs?**
+- **If you find the right reason, it should be easy to generate your own testcases which crash the application. Write down 3 testcases which crashes the application.**
 
 ### Looking Into The Source
-We can now open the source and see if the assumptions are correct. If yhey are, are you able to find and fix the bug? 
+We can now open the source and see if the assumptions are correct. **Are you able to find and fix the bug?** 
 
 > Running the fuzz test again after trying to fix the bug, is a fair check to see if the bug is fixed
