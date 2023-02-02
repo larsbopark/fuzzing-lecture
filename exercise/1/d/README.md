@@ -1,5 +1,5 @@
 # 1d
-This is the last exercise using blackbox fuzz testing in this repository. Following the same procedure as previous you should be able to compile and run a blackbox fuzz test using AFL++.
+This is the last exercise using blackbox fuzz testing in this repository. Following the same procedure as previous you should be able to compile and run a blackbox fuzz test using AFL++. If you don't feel to confident reading C code, I recommend skipping this and coming back later. 
 
 ---------------------------------------------------------------
 

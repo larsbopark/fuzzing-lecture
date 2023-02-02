@@ -18,7 +18,7 @@ int main() {
     if(strlen(shield) > 0) {
         printf("shield: %s",shield);
 
-        if(strcmp(shield, "FUZZing is bad")) abort();
+        if(strcmp(shield, "FUZZing is bad") == 0) abort();
     }
 
     return 0;

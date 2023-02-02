@@ -1,6 +1,10 @@
 # 2a
 This is the first exercise running a instrumented fuzz test, since we already ran blackbox test, running a instrumented fuzz test using AFL++ is trivial. You can do so following the tutorial in the parent directory. When running this kind of fuzz test we have the source code available, and we can use that however we like.
 
+----------------------------------------------------------------
+### Understanding the Application
+The application seems familiar and is rather simple. Describe the application (a single sentence should suffice).
+
 ------------------------------------------------
 
 ### Why are the number of saved crashes not the actual number of crashes?

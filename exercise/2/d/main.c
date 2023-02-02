@@ -33,19 +33,20 @@ int main () {
         printf("\n");
         printf("Here is your current balance: %i dkk\n", balance);
         printf("Press a number to continue:\n"
-               "1. List items\n"
-               "2. Purchase items\n"
-               "3. Deposit currency\n"
-               "4. Exit\n\n");
+               "    1. List items\n"
+               "    2. Purchase items*\n"
+               "    3. Deposit currency\n"
+               "    4. Exit\n"
+               "* Use quickbuy by entering 2 and the index you want to buy delimited by space\n\n");
 
         // Get user input
         fgets(input_buffer, sizeof(input_buffer), stdin);
 
-        switch (input_buffer[0]) {
-            case 49: listItems(); break;
-            case 50: purchase(&balance, input_buffer); break;
-            case 51: printf("This is not implemented yet, please try again later\n\n"); break;
-            case 52: return 1;
+        switch (atoi(&input_buffer[0])) {
+            case 1: listItems(); break;
+            case 2: purchase(&balance, input_buffer); break;
+            case 3: printf("This is not implemented yet, please try again later\n\n"); break;
+            case 4: return 1;
             default:
                 printf("Not a valid option, try again\n");
         }
@@ -74,6 +75,7 @@ void purchase(unsigned int* balance, char* input_buffer) {
         printf("Please enter the ID of the item you desire\n");
         fgets(sub_buffer, 3, stdin);
     } else {
+        // Quickbuy!
         memcpy(sub_buffer, &input_buffer[2], sizeof(input_buffer));
     }
 

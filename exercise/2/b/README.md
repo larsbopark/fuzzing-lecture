@@ -1,10 +1,16 @@
 # 2b
-If you are doing the exercises chronologically, and you have looked in the source code you will probably recognise it from exercise 1/d. If you have not done so i recommend you to do exercise 1/d before continuing with this exercise. Before you are able to start fuzz testing you need to generate a testcase, you should use the one from 1/d to proper compare the two tests. 
+This is the 2nd exercise using the instrumentation supplied by AFL++, you can run and compile the application following the small tutorial in the parent directory.
 
----
-### Notice the difference
-We should experience that the first crash is found faster than doing the blackbox, it ofcourse depends much on the testcase(s). 
+----------------------------------------------------------------
 
-----
+### Understanding the application
+The application seems familiar and is rather simple. Describe the application (a single sentence should suffice).
+
 
 ### Understanding the Results
+
+- ****
+- **Looking at the source code can you determine the cause of the crash?**
+- **What length does a testcase need to have to trigger the crash?**
+- **Fix the application!**
+

@@ -2,24 +2,30 @@
 #include <stdlib.h>
 #include <string.h>
 
-
 int main() {
-    char shield[64] = {0};
-    char buffer[8];
+    char output[32];
+    char operation_buf[32];
+    char input[64];
 
-    // Read input
-    scanf("%s", buffer);
+    printf("Welcome to the ROT13 coder/decoder!\n");
+    printf("ROT13 is a simple substitution cipher.\n"
+           "It is much like a ceasar cipher, where ROT13\n"
+           "is a specific case. Try write some thing you \n"
+           "want encoded. MAX 32 chars!\n\n");
 
-    // Print input
-    printf("buffer: %s\n", buffer);
+    fgets(input, sizeof(input), stdin);
 
+    strncpy(operation_buf, input, 32);
 
-    // Never going to execute this since the shield is never changed
-    if(strlen(shield) > 0) {
-        printf("shield: %s",shield);
-
-        if(strcmp(shield, "FUZZing is bad")) abort();
+    for(int i = 0;i < strlen(operation_buf) - 1; i++){
+        output[i] = ((((operation_buf[i] - 97) + 13) % 26) +97);
     }
 
+
+    printf("Your string: %s\n", input);
+    printf("Encoded: %s\n", output);
+0
     return 0;
 }
+
+

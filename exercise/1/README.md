@@ -3,7 +3,7 @@ Here are the instructions of how to run a blackbox fuzz test using AFL++. Each e
 
 > **TLDR**: Compile and run AFL++
 >```bash
->clang -o target main.c
+>clang -o target main.b
 >afl-fuzz -n -i input_directory -o output_directory -- /path/to/application
 >```
 
@@ -26,7 +26,7 @@ cd /exercise/1/a
 ```
 The contents are a source file, a directory containing a test case and this README. The C source file can be compiled running `Clang` with the following command:
 ```bash
-clang -o target main.c
+clang -o target main.b
 ```
 
 The compiled application is called `target` and can executed by running the following command:
@@ -75,7 +75,7 @@ cat id:000000,* | /exercise/1/a/target
 ```
 > The source code can be edited in the container used the command line editor Vim. In order to modify the code simply run the following command:
 > ```bash
-> vim main.c
+> vim main.b
 > ```
 > For first time Vim users it can be a bit hard to use. Here are some helpful commands:
 > - `i` - enter insert mode

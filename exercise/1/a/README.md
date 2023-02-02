@@ -30,7 +30,7 @@ Even if we pretended the fuzz test was blackbox, we have the opportunity to read
 
 > The source code can be edited in the container used the command line editor Vim. In order to modify the code simply run the following command:
 > ```bash
-> vim main.c
+> vim main.b
 > ```
 > For first time Vim users it can be a bit hard to use. Here are some helpful commands:
 > - `i` - enter insert mode
