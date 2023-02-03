@@ -10,7 +10,7 @@ AFL++ offers a wide variety of custom compilers, which are located in `/usr/loca
 
 Compiling the application with instrumentation can be done by navigating to the exercise directory and then compiling the source code using the following command:
 ```shell
-afl-cc -o target main.b
+afl-cc -o target main.c
 ```
 The compiled application is called `target` and can be executed by running the following command:
 ```bash
