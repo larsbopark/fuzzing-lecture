@@ -2,7 +2,7 @@
 In order to run and compile the application you can follow the tutorial in the parent directory. If you already did so, we should see a rising number of crashes running the fuzz test, we are ofcourse interested in analysing the crashes and determining the mistake that leads to them. **If you could not make the fuzz test start it is because there does not exist a input directory for this exercise**.
 
 ### Making the Initial Testcase
-In order to start a fuzz test with AFL++, we need at least one initial testcase, which we have to supply. We make a testcase by "recording" the inputs from a **correct** run of the application. The more features there are used the better the fuzz test will be, this is due to the initial testcases being **the baseline** for the fuzz test. If not all features can be covered in one testcase, we can simply supply more. First let us make the input directory:
+In order to start a fuzz test with AFL++, we need at least one initial testcase, which we must supply. We make a testcase by "recording" the inputs from a **correct** run of the application. The more features there are used the broader the fuzz test will be, this is due to the initial testcases being **the baseline** for the fuzz test. If one is interested in fuzz testing a certain path, one can advantageously make a testcase that guides the fuzzer in that direction. If not all features can be covered in one testcase, we can simply supply more. First let us make the input directory:
 ```shell
 mkdir input_directory
 ```
@@ -38,7 +38,7 @@ Try to generate a number of testcases which follows the assumptions your made wh
 ----------------------------------------------------------------
 
 ### Open the source, find and fix the problem!
-When compiling the source code no warnings is thrown. This ofcourse indicate that the source code should be safe, but as we experienced that is not the case. Take a closer look at the source code and try to find and fix the vulnerability.
+When compiling the source code no warnings is thrown. Compared to last exercise, no warnings is thrown when compiling the application, but as we see it still contain a vulnerability. Take a closer look at the source code and try to find and fix the vulnerability.
 
 <details>
   <summary>Hint</summary>
