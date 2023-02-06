@@ -8,3 +8,6 @@ We should experience that the first crash is found faster than doing the blackbo
 ----
 
 ### Understanding the Results
+We already fixed the application, when doing the blackbox exercise. We are well aware of the problem causing the crash. That said, we found other bugs which did not result in a crash. Try to insert **assert**-call in the source, which controls for some of the bugs you found earlier.
+
+Running the fuzz test again you can investigate how effective the fuzz test is breaking the assertions. Then you can try fix the bugs and running the test again in order to check if the fuzzer is able to break them anyway.

@@ -4,7 +4,7 @@ Much like previous we are already aware of how we compile and run the applicatio
 ---
 
 ### Understanding the Application
-
+The application itself seems to encode a given string using ROT13. This ofcourse includes some string manipulation. At first look on the application, **does it seem unsafe or buggy?**
 
 ---
 

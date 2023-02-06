@@ -1,5 +1,5 @@
 # Discussion and Reflection
-In the following section are some exercises, that  
+In the following section are some discussion exercises. 
 
 a) The term "fuzz" was introduced by Barton Miller in 1988, but ofcourse the idea of giving random input to a program was not new at that time. It is still only used to a limited extent today, but have gained more popularity recently, **Why do you think, it just started to gain more popularity recently?**
 

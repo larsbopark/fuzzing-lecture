@@ -1,5 +1,5 @@
 # Fuzzing with Instrumentation
-In this exercise we will run a fuzz test using the instrumentation offered by AFL++. While this technique is sometime referred to as greybox, it is not the case since the source code is needed and hereby is whitebox. AFL++ utilises a custom compiler in order to insert instrumentation in a given application. When compiling the source code with the custom compiler logging calls are inserted in the binary. These logging calls are used to guide the fuzzer in order to obtain a better coverage.
+In this exercise we will run a fuzz test using the instrumentation feature offered by AFL++. AFL++ utilises a custom compiler in order to insert instrumentation in a given application. When compiling the source code with the custom compiler logging calls are inserted in the binary. These logging calls are used to guide the fuzzer in order to obtain a better coverage.
 
 ## Prerequisites
 We make sure that the docker container is running. If it is not running we do so by running the script `build-docker.sh`.

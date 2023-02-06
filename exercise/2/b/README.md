@@ -6,11 +6,10 @@ This is the 2nd exercise using the instrumentation supplied by AFL++, you can ru
 ### Understanding the application
 The application seems familiar and is rather simple. Describe the application (a single sentence should suffice).
 
-
 ### Understanding the Results
 
-- ****
-- **Looking at the source code can you determine the cause of the crash?**
+
+- **Looking at the source code and results of the fuzz testcan you determine the cause of the crash?**
 - **What length does a testcase need to have to trigger the crash?**
 - **Fix the application!**
 
