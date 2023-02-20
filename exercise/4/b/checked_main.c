@@ -18,7 +18,7 @@ uint8_t check(int32_t value){
     return 0;
 }
 
-// Stupid Hash Function
+// Foolish Hash Function
 int32_t hash(char* str){
     int32_t hash = 1;
     int c;
