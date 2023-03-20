@@ -33,7 +33,6 @@ This is due to the assert statements in the source code.
 In the source code exist a function called `process_input` it seems undone. 
 **Can you fix it such that if the input is not in the right format the application will exit properly
 instead of crashing?**
-- There already exist handling of a single case, which case is that?
-- You can use that case to get inspiration to handle the other ones
+- There already exist handling of a single case, which case is that? You can use that case to get inspiration to handle the other ones
 - Try to run the fuzz test after you fix the application, does it still crash?
     - if so why?

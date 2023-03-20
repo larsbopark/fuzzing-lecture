@@ -10,7 +10,7 @@ int main() {
     printf("Welcome to the ROT13 coder/decoder!\n");
     printf("ROT13 is a simple substitution cipher.\n"
            "It is much like a ceasar cipher, where ROT13\n"
-           "is a specific case. Try write some thing you \n"
+           "is a specific case. Try write something you \n"
            "want encoded. MAX 32 chars!\n\n");
 
     fgets(input, sizeof(input), stdin);
@@ -24,7 +24,7 @@ int main() {
 
     printf("Your string: %s\n", input);
     printf("Encoded: %s\n", output);
-0
+
     return 0;
 }
 

@@ -12,5 +12,5 @@ Describe the application (a single sentence should suffice).
 
 
 - **Looking at the source code and results of the fuzz test, can you determine the cause of the crash?**
-- **What length does a testcase need to have to trigger the crash?**
+- **What length does a test case need to have to trigger the crash?**
 - **Fix the application!**

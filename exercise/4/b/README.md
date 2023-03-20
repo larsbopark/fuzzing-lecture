@@ -15,8 +15,8 @@ Remember to use this flag when recompiling!
 
 ## Understanding the Results
 When running the fuzz test, we should observe a number of crashes. 
-Take a closer look at the resulting testcases.
-It might not be obvious what the problem is when only looking at the testcases.
+Take a closer look at the resulting test cases.
+It might not be obvious what the problem is when only looking at the test cases.
 Instead, take a look at the source code.
 - **Can you determine the problem in the code?**
 - **Can you fix the problem in the code?**

@@ -5,7 +5,7 @@
 #include <assert.h>
 
 // This function handle inputs and ensure that the input is valid
-// if not valid just return false and the application will exit
+// if not valid just return 0 and the application will exit
 // without crashing
 int process_input(char *buf){
     // TODO!!

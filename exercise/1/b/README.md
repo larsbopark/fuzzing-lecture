@@ -1,41 +1,41 @@
 # 1b
-In order to run and compile the application, you can follow the tutorial in the parent directory.
+In order to run and compile the application, you can follow the tutorial in the previous exercise.
 If you already did so, we should see a rising number of crashes running the fuzz test.
 We are course interested in analysing the crashes and determining the mistake that leads to them.
 If you could not make the fuzz test start, **it is because there does not exist an input directory for this exercise**.
 
 ### Making the Initial Testcase
-In order to start a fuzz test with AFL++, we need at least one initial testcase, which we must supply.
-We make a testcase by "recording" the inputs from a **correct** run of the application.
-The more features there are used the broader the fuzz test will be,
-this is due to the initial testcases being **the baseline** for the fuzz test.
+In order to start a fuzz test with AFL++, we need at least one initial test case, which we must supply.
+We make a test case by "recording" the inputs from a **correct** run of the application.
+The more features there are used the broader the fuzz test will be. 
+This is due to the initial test cases being **the baseline** for the fuzz test.
 If one is interested in fuzz testing a certain path,
-one can advantageously make a testcase that guides the fuzzer in that direction.
-If not all features can be covered in one testcase, we can simply supply more.
+one can advantageously make a test case that guides the fuzzer in that direction.
+If not all features can be covered in one test case, we can simply supply more.
 First, let us make the input directory:
 ```shell
 mkdir input_directory
 ```
-Here is an example of how a testcase can be generated in the terminal,
+Here is an example of how a test case can be generated in the terminal,
 and I am sure that a curious student is not able to supply a better one:
 ```bash
-echo -e "FUZZing is great" > input_directory/testcase0
+echo -e "FUZZing is great" > input_directory/test case0
 ```
-Now we can test if the testcase works by running the following command:
+Now we can test if the test case works by running the following command:
 ```bash
-cat input_directory/testcase0 | ./target
+cat input_directory/test case0 | ./target
 ```
-> Recalling the two major ways of generating testcases in fuzz testing:
-> - Mutation-based -- Mutates and initial testcase by applying random mutation-operations
-> - Generation-based -- Generating testcase from a set of rules
+> Recalling the two major ways of generating test cases in fuzz testing:
+> - Mutation-based -- Mutates and initial test case by applying random mutation-operations
+> - Generation-based -- Generating test case from a set of rules
 >
 > Both very effective, mutation-based being easier to use and generation-based being more precise.
 
 ----------------------------------------------------------------
 
 ### Understanding the Results
-If doing the exercises chronologically, we know that the idea of looking at the testcases is important. 
-Try to find the common property for the testcases.
+If doing the exercises chronologically, we know that the idea of looking at the test cases is important. 
+Try to find the common property for the test cases.
 
 <details>
   <summary>Hint</summary>
@@ -45,8 +45,8 @@ The application seems to suffer the same problem as exercise/1/a.
 ----------------------------------------------------------------
 
 ### Test your assumptions!
-Try to generate a number of testcases which follows the assumptions you made when answering the question above.
-Running these testcases will help you understand if your assumptions are correct.
+Try to generate a number of test cases which follows the assumptions you made when answering the question above.
+Running these test cases will help you understand if your assumptions are correct.
 
 ----------------------------------------------------------------
 
