@@ -12,7 +12,7 @@ We base this tutorial on the first exercise located in `/exercise/1/a`.
 
 ## Prerequisites
 We make sure that the docker container is running if not the container can be launched
-by running the script `build-docker.sh`.
+by running the script `build-docker.sh` (if this does not work, try running the `.bat` instead.
 
 ## Compiling and Running the Application
 The source code is provided, but in order to do a correct blackbox fuzz test, we must **avoid** viewing the content.
