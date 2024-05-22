@@ -1,14 +1,14 @@
 # Fuzz Testing Exercises
 This repository is made as a supplement to the fuzz testing lectures held by Lars Bo Frydenskov,
-Research Assistant on Aalborg University. 
-In this repository, you find the slides used in most recently held lecture and related exercises.
+Research Assistant at Aalborg University. 
+In this repository, you find the slides used in the most recently held lecture and related exercises.
 
 ## Cloning the Repository
-In order to clone the repository you can type the following the command if you have `git` installed on your system. 
+In order to clone the repository you can type the following command if you have `git` installed on your system. 
 ```shell
-git clone https://github.com/larsbpf/fuzzing-lecture.git
+git clone https://github.com/larsbopark/fuzzing-lecture.git
 ```
-Otherwise you are able to download zip, [here](https://github.com/larsbpf/fuzzing-lecture/archive/refs/heads/main.zip). 
+Otherwise, you are able to download the zip, [here](https://github.com/larsbopark/fuzzing-lecture/archive/refs/heads/main.zip). 
 
 ## Running Docker
 Simply be sure to have Docker installed, and then run the build script.
